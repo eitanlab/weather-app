@@ -1,0 +1,55 @@
+{
+	"days": [
+		{
+			"name": "Lunes",
+    		"imgSrc": "https://openweathermap.org/img/w/01d.png",
+    		"viento": "20km/h",
+    		"nubosidad": "50%",
+    		"presion": "2",
+    		"humedad": "10%",
+    		"minTemp": "25",
+    		"maxTemp": "30"
+		},
+		{
+			"name": "Martes",
+    		"imgSrc": "https://openweathermap.org/img/w/02d.png",
+    		"viento": "20km/h",
+    		"nubosidad": "60%",
+    		"presion": "3",
+    		"humedad": "15%",
+    		"minTemp": "20",
+    		"maxTemp": "25"
+		},
+		{
+			"name": "Miercoles",
+    		"imgSrc": "https://openweathermap.org/img/w/10d.png",
+    		"viento": "20km/h",
+    		"nubosidad": "55%",
+    		"presion": "4",
+    		"humedad": "10%",
+    		"minTemp": "21",
+    		"maxTemp": "28"
+		},
+		{
+			"name": "Jueves",
+    		"imgSrc": "https://openweathermap.org/img/w/01d.png",
+    		"viento": "20km/h",
+    		"nubosidad": "40%",
+    		"presion": "5",
+    		"humedad": "20%",
+    		"minTemp": "19",
+    		"maxTemp": "23"
+		},
+		{
+			"name": "Viernes",
+    		"imgSrc": "https://openweathermap.org/img/w/01d.png",
+    		"viento": "20km/h",
+    		"nubosidad": "50%",
+    		"presion": "2",
+    		"humedad": "30%",
+    		"minTemp": "15",
+    		"maxTemp": "17"
+		}
+
+	]
+}

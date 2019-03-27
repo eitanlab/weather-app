@@ -1,0 +1,28 @@
+.day-list {
+
+}
+
+.day-resume {
+	display: inline-block;
+    min-width: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.day-resume:hover {
+	border-color: #A63D40;
+}
+
+.selected {
+	background-color: #A63D40;
+    border-color: #A63D40;
+}
+
+.day-resume p {
+	display: block;
+    margin: 0 auto;
+}

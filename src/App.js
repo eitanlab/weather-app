@@ -1,28 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import DayResume from './components/dayresume/dayresume';
+import DayDetail from './components/daydetail/daydetail';
+import { days } from './dias.json';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+class App extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            days,
+            daySelected: 0
+        }
+
+        this.changeDaySelected = this.changeDaySelected.bind(this);
+    }
+    
+    changeDaySelected(index) {
+        console.log(index);
+        this.setState({ daySelected: index })
+    }
+
+    render() {
+        return (
+            <div className="App container p-3 m-3">
+                <div className='row'>
+                    <DayResume days={this.state.days} daySelected={this.state.daySelected} changeDaySelected={this.changeDaySelected} />
+                </div>
+                <div className='row'>
+                    <DayDetail viento={this.state.days[this.state.daySelected].viento} nubosidad={this.state.days[this.state.daySelected].nubosidad} presion={this.state.days[this.state.daySelected].presion} humedad={this.state.days[this.state.daySelected].humedad} minTemp={this.state.days[this.state.daySelected].minTemp} maxTemp={this.state.days[this.state.daySelected].maxTemp} />
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
