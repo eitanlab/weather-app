@@ -27,7 +27,7 @@ class App extends React.Component {
                     <DayResume days={this.state.days} daySelected={this.state.daySelected} changeDaySelected={this.changeDaySelected} />
                 </div>
                 <div className='row'>
-                    <DayDetail viento={this.state.days[this.state.daySelected].viento} nubosidad={this.state.days[this.state.daySelected].nubosidad} presion={this.state.days[this.state.daySelected].presion} humedad={this.state.days[this.state.daySelected].humedad} minTemp={this.state.days[this.state.daySelected].minTemp} maxTemp={this.state.days[this.state.daySelected].maxTemp} />
+                    <DayDetail daySelected={this.state.days[this.state.daySelected]} />
                 </div>
             </div>
         );

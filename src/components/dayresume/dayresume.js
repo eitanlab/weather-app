@@ -1,5 +1,6 @@
 import React from 'react';
 import './dayresume.css';
+import Badge from 'react-bootstrap/Badge';
 
 const DayResume = props => {
 	
@@ -12,7 +13,10 @@ const DayResume = props => {
 	    		<div className={props.daySelected === index ? 'day-resume m-2 selected' : 'day-resume m-2'}  key={index} onClick={handleDayClick.bind(this, index)}>
 					<p>{dayItem.name}</p>
 					<img src={dayItem.imgSrc} />
-					<p>{dayItem.minTemp} - {dayItem.maxTemp}</p>				
+					<div className="badges" >
+						<Badge variant="secondary">Min {dayItem.minTemp}°</Badge>
+						<Badge variant="warning">Max {dayItem.maxTemp}°</Badge>
+					</div>				
 				</div>
 		);
     });

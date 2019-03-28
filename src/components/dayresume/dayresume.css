@@ -8,21 +8,21 @@
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 5px;
     background-color: #fff;
 }
 
-.day-resume:hover {
+.day-resume:hover, .selected {
 	border-color: #A63D40;
-}
-
-.selected {
-	background-color: #A63D40;
-    border-color: #A63D40;
+    background-color: #e3e3e3;
 }
 
 .day-resume p {
 	display: block;
     margin: 0 auto;
+}
+
+.badge {
+    margin: 0 3px;
 }
