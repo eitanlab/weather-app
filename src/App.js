@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import DayResume from './components/dayresume/dayresume';
 import DayDetail from './components/daydetail/daydetail';
+import OpenWeatherMap from './util/openweathermap';
 import { days } from './dias.json';
 
 class App extends React.Component {
@@ -22,7 +23,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="App container p-3 m-3">
+            <div className="App container p-3">
                 <div className='row'>
                     <DayResume days={this.state.days} daySelected={this.state.daySelected} changeDaySelected={this.changeDaySelected} />
                 </div>
