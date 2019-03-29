@@ -6,13 +6,13 @@ const DayDetail = props => {
 	return (
 		<div className='day-detail col-md-12 mt-5'>
 			<ListGroup>
-				<ListGroup.Item variant="primary"><p className="h4">{props.daySelected.name}</p></ListGroup.Item>
-				<ListGroup.Item>Viento: {props.daySelected.viento}</ListGroup.Item>
-				<ListGroup.Item>Nubosidad: {props.daySelected.nubosidad}</ListGroup.Item>
-				<ListGroup.Item>Presión: {props.daySelected.presion}</ListGroup.Item>
-				<ListGroup.Item>Humedad: {props.daySelected.humedad}</ListGroup.Item>
-				<ListGroup.Item>Temperatura min: {props.daySelected.minTemp}</ListGroup.Item>
-				<ListGroup.Item>Temperatura max: {props.daySelected.maxTemp}</ListGroup.Item>
+				<ListGroup.Item variant="primary"><p className="h4">{props.daySelected.date}</p></ListGroup.Item>
+				<ListGroup.Item>Viento: {props.daySelected.wind}</ListGroup.Item>
+				<ListGroup.Item>Nubosidad: {props.daySelected.clouds}</ListGroup.Item>
+				<ListGroup.Item>Presión: {props.daySelected.pressure}</ListGroup.Item>
+				<ListGroup.Item>Humedad: {props.daySelected.humidity}</ListGroup.Item>
+				<ListGroup.Item>Temperatura min: {props.daySelected.tempMin}</ListGroup.Item>
+				<ListGroup.Item>Temperatura max: {props.daySelected.tempMax}</ListGroup.Item>
 			</ListGroup>
 		</div>
 	);

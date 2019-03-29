@@ -10,12 +10,12 @@
     cursor: pointer;
     border: 2px solid #fff;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #e3e3e3;
 }
 
 .day-resume:hover, .selected {
 	border-color: #A63D40;
-    background-color: #e3e3e3;
+    background-color: #fff;
 }
 
 .day-resume p {

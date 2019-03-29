@@ -7,15 +7,16 @@ const DayResume = props => {
 	const handleDayClick = (index) => {
 		props.changeDaySelected(index);
 	}
-	console.log(props.daySelected);
+	//console.log(props.daySelected);
+	console.log('props.days tiene' + props.days)
 	const daysArray = props.days.map((dayItem,index) => {
     	return (
 	    		<div className={props.daySelected === index ? 'day-resume m-2 selected' : 'day-resume m-2'}  key={index} onClick={handleDayClick.bind(this, index)}>
-					<p>{dayItem.name}</p>
+					<p>{dayItem.date}</p>
 					<img src={dayItem.imgSrc} />
 					<div className="badges" >
-						<Badge variant="secondary">Min {dayItem.minTemp}°</Badge>
-						<Badge variant="warning">Max {dayItem.maxTemp}°</Badge>
+						<Badge variant="secondary">Min {dayItem.tempMin}°</Badge>
+						<Badge variant="warning">Max {dayItem.tempMax}°</Badge>
 					</div>				
 				</div>
 		);
