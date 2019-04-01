@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import DayResume from './components/dayresume/dayresume';
 import DayDetail from './components/daydetail/daydetail';
-import OpenWeatherMap from './util/openweathermap';
+import Apixu from './util/apixu';
 //import { days } from './dias.json';
 
 //const cityId = '3435910';
@@ -17,8 +17,6 @@ class App extends React.Component {
                    iconId: '',
                    windSpeed: '',
                    description: '',
-                   clouds: '',
-                   pressure: '',
                    humidity: '',
                    tempMin: '',
                    tempMax: ''
@@ -36,7 +34,7 @@ class App extends React.Component {
     }
 
     componentWillMount() {
-        OpenWeatherMap.FetchByCityId('3435910').then( dayList => {
+        Apixu.FetchByCityId('3435910').then( dayList => {
             //console.log('A: ' + dayList[0].date);
             this.setState({days: dayList});
 

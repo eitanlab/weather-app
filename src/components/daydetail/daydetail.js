@@ -8,8 +8,6 @@ const DayDetail = props => {
 			<ListGroup>
 				<ListGroup.Item variant="primary"><p className="h4">{props.daySelected.date}</p></ListGroup.Item>
 				<ListGroup.Item>Viento: {props.daySelected.windSpeed}</ListGroup.Item>
-				<ListGroup.Item>Nubosidad: {props.daySelected.clouds}</ListGroup.Item>
-				<ListGroup.Item>Presión: {props.daySelected.pressure}</ListGroup.Item>
 				<ListGroup.Item>Humedad: {props.daySelected.humidity}</ListGroup.Item>
 				<ListGroup.Item>Temperatura min: {props.daySelected.tempMin}</ListGroup.Item>
 				<ListGroup.Item>Temperatura max: {props.daySelected.tempMax}</ListGroup.Item>
